@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marvel HTML Bootstrap 4 Template</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+<!--
+
+Tooplate 2115 Marvel
+
+https://www.tooplate.com/view/2115-marvel
+
+-->
+  </head>
+  <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Marvel</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item">Edward Song</span>
+                                    <span class="animated-item"> a backend developer</span>
+                                </div>
+                        </h1>
+
+                        <p>
+                          I am a third year computer science student at the University of Waterloo.
+                          I love working with databases and cloud technologies. I enjoy building web applications and experimenting with machine learning in my spare time. 
+                          
+                          <br> My favorite technologies are:</p>
+                        <div class="tech-container">
+                          <span class="tech-pill">TypeScript</span>
+                          <span class="tech-pill">Node.JS</span>
+                          <span class="tech-pill">AWS</span>
+                          <span class="tech-pill">Python</span>
+                          <span class="tech-pill">C++</span>
+                          <span class="tech-pill">MySQL</span>
+                          <span class="tech-pill">MongoDB</span>
+                      </div>
+                      
+                     <p><br> Some of my hobbies include playing badminton, rock climbing, and running. I am currently training for a half marathon! </p>
+                      <div class="custom-btn-group mt-4">
+                        <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                        <a href="https://github.com/your-github-username" target="_blank" class="btn mr-lg-2 custom-btn">
+                          <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/your-linkedin-username" target="_blank" class="btn mr-lg-2 custom-btn">
+                          <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="mailto:your-email@example.com" class="btn mr-lg-2 custom-btn">
+                          <i class="fas fa-envelope"></i> Email
+                      </a>
+
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
+
+                      <div class="col-lg-8 mx-auto">
+                        <h1>Projects</h1>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                          <div class="project-card">
+                            <h2 class = "project-title"> Snapchef </h2>
+                            <div class="project-info">  
+                              <img src="images/project/snapchef.png" class="img-fluid" alt="project image">
+                              <p class = "project-text" >
+                                
+                                Snapchef is a web application that generates recipes based on the ingredients 
+                                detected with our AI model using webcam or image input. 
+                                Once ingredients are determined, ChatGPT API will generate recipes. We used YoloV8, PyTorch, OpenCV,
+                                to train our model on 80+ ingredients. We used a  with a 95% classification accuracy. 
+                                Users can see 
+                                past requests and are authenticated via BCrypt with their data being stored in MongoDB. Our backend was built 
+                                with both Flask and Node.js.
+                              </p>                             
+                                
+                            </div>
+
+                            <div class="tech-container">
+                              <span class="tech-pill">React</span>
+                              <span class="tech-pill">Node.js</span>
+                              <span class="tech-pill">MongoDB</span>
+                              <span class="tech-pill">PyTorch</span>
+                              <span class="tech-pill">OpenCV</span>
+                              <span class="tech-pill">JavaScript</span>
+                              <span class="tech-pill">Flask </span>
+                            </div>
+                          </div>
+
+                          <div class="project-card">
+                            <h2 class = "project-title"> AWS Global Rankings Hackathon </h2>
+                            <div class="project-info">  
+                              <img src="images/project/leaguerankings.jpeg" class="img-fluid" alt="project image">
+                              <p class = "project-text" >
+                                
+                               For the AWS Global Rankings Hackathon, we created a RestAPI 
+                               to rank the international and regional rankings for League of Legend teams. 
+                                We used XGBoost to predict outcomes of tournaments, conducting feature engineering 
+                                and analysis on over 1000+ matches. Our API was built with API Gateway, Lambda, S3, and SageMaker.
+                              </p>                             
+                                
+                            </div>
+
+                            <div class="tech-container">
+                              <span class="tech-pill">AWS </span>
+                              <span class="tech-pill">TypeScript</span>
+                              <span class="tech-pill">Python</span>
+                              <span class="tech-pill">Pandas</span>
+                              <span class="tech-pill">Sci-kit</span>
+                              <span class="tech-pill">Numpy</span>
+                            </div>
+                          </div>
+
+                          <div class="project-card">
+                            <h2 class = "project-title"> Chat-GPTest </h2>
+                            <div class="project-info">  
+                              <img src="images/project/chatgptest.png" class="img-fluid" alt="project image">
+                              <p class = "project-text" >
+                                I programmed a VSCode extension to use the ChatGPT API to generate unit tests for primarily Python, 
+                                C++, and JavaScript code. The extension can write unit tests based on a prompt and existing code written 
+                                by a developer. In addition, it can also debug and provide insights on failing unit tests. The extension uses popular testing frameworks such as PyTest and Jasmine.
+                              </p>                             
+                                
+                            </div>
+
+                            <div class="tech-container">
+                              <span class="tech-pill">VSCode </span>
+                              <span class="tech-pill">TypeScript</span>
+                              <span class="tech-pill">PyTest</span>
+                              <span class="tech-pill">Jasmine</span>
+                            </div>
+                          </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2019</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Backend Developer</span><small>Connect X</small></h3>
+                                  <section id="experience-section">
+                                 
+                                    <ul class="experience-list">
+                                        <li>Developed an automation tool to generate and maintain Swagger API documentation.</li>
+                                        <li>Optimized ETL workflow using AWS Glue to extract and transform large datasets in AWS S3, and load structured data into a MySQL database, enabling data integrity and seamless data flow for over 100GB of data.</li>
+                                    </ul>
+                                </section>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2016</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UI Freelancer</h3>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2017</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                             </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Artwork Design</span><small>New Art School</small></h3>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">010 020 0960</p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+                </div>
+
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
+
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
+
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
