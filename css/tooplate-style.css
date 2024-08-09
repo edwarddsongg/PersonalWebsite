@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
 }
 
+.education-text {
+  scale: 0.5;
+}
+
 h1 {
   color: #212121;
   font-size: 2.8em;
@@ -115,7 +119,7 @@ b, strong {
   position: relative;
 }
 
-tech-container {
+.tech-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -132,6 +136,25 @@ tech-container {
   font-weight: bold;
   display: inline-block;
   transition: background-color 0.3s ease;
+}
+
+.tech-container2 {
+  display: flex;
+  flex-wrap: wrap; /* Allows the pills to wrap to the next line */
+  gap: 5px; /* Adds a gap between pills */
+  row-gap: 2px; /* Adds space between rows if pills wrap */
+  font-weight: bold;
+}
+
+.tech-pill2 {
+  background-color: #ffc200; /* Example background color */
+  border-radius: 20px; /* Makes the pill shape */
+  padding: 3px 8px; /* Reduces padding to match smaller text size */
+  font-size: 12px; /* Makes the text smaller */
+  margin: 0; /* No margin between pills */
+  display: inline-block; /* Keeps the pills inline */
+  white-space: nowrap; /* Prevents text from wrapping inside the pill */
+  margin-bottom: 8px; /* Adds space between pills */
 }
 
 .contact-container {
@@ -429,10 +452,17 @@ tech-container {
   line-height: 75px;
 }
 
+.education-p {
+  color: black;
+  font-weight: bold;
+}
+
+
 .timeline-info {
   display: inline-block;
   vertical-align: top;
   max-width: 432px;
+  padding: 0px;
   margin-left: 6em;
 }
 .timeline-info small {
@@ -528,7 +558,7 @@ tech-container {
   background: #474559;
   border-radius: 0 0 3px 3px;
   position: relative;
-  bottom: 8px;
+  width: 100%;
 }
 .contact-info p, .contact-info a {
   color: #f7f3f3;
@@ -648,24 +678,45 @@ tech-container {
   }
 }
 
-.experience-list {
-  list-style: none;
+.work-experience {
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.work-experience:hover {
+  transform: translateY(-10px);
+}
+
+.company-name h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffc200;
+}
+
+.work-list {
+  list-style-type: none;
   padding: 0;
-  margin: 0;
-  max-width: 800px;
-  margin: 20px auto;
 }
 
-.experience-list li {
-  background: #222;
-  border: 1px solid #00f;
+.work-list li {
+  background-color: rgb(249, 249, 249);
+  border-left: 4px solid #ffc200;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #fff;
+  margin-bottom: 6px;
+  padding: 8px;
+  transition: background-color 0.3s ease, border-left-color 0.3s ease;
 }
 
-.experience-list li:hover {
-  background: #333;
+.work-list li:hover {
+  background-color: #ffd858;
+  border-left-color: #ffc200;
+}
+
+.work-list li:last-child {
+  margin-bottom: 0;
 }
