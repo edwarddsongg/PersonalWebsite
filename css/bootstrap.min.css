@@ -435,6 +435,7 @@ mark {
 .img-fluid {
   max-width: 60%;
   padding: 30px;
+  border-radius: 50px;
 }
 .img-thumbnail {
   padding: 0.25rem;
